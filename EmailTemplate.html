@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p>Hello <?= cert_details.cert_manager ?>,</p>
+
+    <p><b>Your <?= cert_details.cert_provider_name ?> certificate expires in <?= cert_details.days_left ?> days.</b></p>
+
+    <p><b>Account Name/ID: </b><?= cert_details.account ?><br/>
+       <b>Domain Name: </b><?= cert_details.domain_name ?>
+    </p>
+
+    <p>Please renew it immediately to avoid unnecessary interruptions to your running services. </p>
+
+    <p>Regards,<br/>
+    SysOpsTechnix.com</p>
+    
+    <p>Please do not reply to this message. All replies are routed to an unmonitored mailbox.</p>
+    
+  </body>
+</html>
