@@ -1,0 +1,24 @@
+Cert creation 
+
+sudo certbot -v certonly --manual --preferred-challenges=dns  --email mahisakapal@gmail.com \ 
+--server https://acme-v02.api.letsencrypt.org/directory \
+--work-dir=. --config-dir=. --logs-dir=. \
+--agree-tos \
+-d testmahi.com
+
+———————
+
+sudo certbot -v certonly --manual --preferred-challenges=dns  --email mahisakapal@gmail.com \   #your email address 
+--server https://acme-v02.api.letsencrypt.org/directory \		#lets encrypt server url 
+--work-dir=. --config-dir=. --logs-dir=. \					#working dir and config dir 
+--agree-tos \
+-d testmahi.com										#you domain name 
+
+
+
+
+
+openssl rsa -in (keyname) -out (dec-key)				# decript the cert for HRO CCV2 
+
+
+ssh-keygen -f ~/.ssh/id_rsa -y > ~/.ssh/id_rsa.pub			# get the public key from private key 
